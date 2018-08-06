@@ -1,0 +1,68 @@
+name: Clients
+slug: clients
+description: Our clients list
+label_field_name: name
+order_by: _position
+order_direction: asc
+group_by: sector
+public_submission_enabled: false
+public_submission_account_emails: []
+fields:
+- name:
+    label: Name
+    type: string
+    required: true
+    hint: Company or brand name
+    localized: false
+- moto:
+    label: Moto
+    type: string
+    required: false
+    hint: Company's slogan
+    localized: false
+- logo:
+    label: Logo
+    type: file
+    required: false
+    hint: Square picture (eg. 200x200)
+    localized: false
+- city:
+    label: City
+    type: string
+    required: false
+    hint: Home city
+    localized: false
+- country:
+    label: Country
+    type: string
+    required: false
+    hint: Full name
+    localized: false
+- sector:
+    label: Sector
+    type: select
+    required: false
+    hint: Choose from the list or add one
+    localized: false
+    select_options:
+      en:
+      - logistics
+      - industry
+- testimonial:
+    label: Testimonial
+    type: text
+    required: false
+    hint: 2-3 paragraph testimonial
+    localized: false
+- contact_name:
+    label: Contact name
+    type: string
+    required: false
+    hint: Name Surname
+    localized: false
+- contact_position:
+    label: Contact position
+    type: string
+    required: false
+    hint: Position in the company
+    localized: false

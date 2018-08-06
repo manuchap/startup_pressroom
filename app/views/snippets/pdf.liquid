@@ -1,0 +1,20 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  var doc = new jsPDF();
+  var specialElementHandlers = {
+    '#ignorePDF': function(element, renderer) {
+      return true;
+    }
+  };
+  $('#pdf').click(function() {
+    doc.fromHTML($('#contentcmd').get(0), 15, 15, {
+      'width': 170,
+      'elementHandlers': specialElementHandlers
+    });
+    doc.save('article.pdf');
+  });
+  $('#msw').click(function(event) {
+      $('#contentcmd').wordExport();
+  });
+});
+</script>

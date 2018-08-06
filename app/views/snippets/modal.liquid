@@ -1,0 +1,33 @@
+<div class='w3-modal' id='id01'>
+  {% model_form 'customer_messages', success: '/', error: '/' %}
+  {% if customer_message.errors %}
+  <p>The following errors occured:</p>
+  <ul>
+    {% for error in customer_message.errors %}
+    <li>{{error[0] | capitalize}} -  {{error[1]}}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <div class='w3-modal-content w3-card-4 w3-animate-top w3-center'>
+    <header class='w3-container w3-theme'>
+      <span class='w3-btn w3-theme w3-display-topright' onclick="document.getElementById('id01').style.display='none'">x</span>
+      <h5>
+        <i class='fa fa-2x fa-smile-o'></i>
+      </h5>
+      <h3>
+        {{ 'interested' | translate }}
+      </h3>
+    </header>
+    <div class='w3-padding w3-theme-l1'>
+      <p>
+        {{ 'notify' | translate }}
+      </p>
+      <input class='w3-input w3-border w3-margin-bottom' name='content[email]' placeholder='azer@tyui.com' type='text' value='{{ message.email }}'>
+      <input name='content[subject]' type='hidden' value='{{ message.subject }}'>
+    </div>
+    <footer class='w3-container w3-theme'>
+      <button class='w3-btn w3-text-white accent_bg w3-round w3-small w3-margin' type='submit'>{{ 'ready' | translate | upcase }}</button>
+    </footer>
+  </div>
+  {% endmodel_form %}
+</div>

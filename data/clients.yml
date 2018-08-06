@@ -1,0 +1,129 @@
+- Client 1:
+    _slug: client-1
+    name: Client 1
+    moto: Rem omnis a perferendis.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: logistics
+    testimonial: Unde velit sit quisquam nobis labore occaecati. Officia neque rem
+      amet adipisci voluptatem expedita. Et quo totam dolor voluptas. Repellat aut
+      voluptatem molestiae sit. Dolor maiores molestiae repudiandae quaerat tenetur
+      dolorum accusamus.
+    contact_name: Quia voluptas maiores veniam et recusandae sunt impedit.
+    contact_position: Aut molestias ducimus veritatis voluptatem.
+- Client 2:
+    _slug: client-2
+    name: Client 2
+    moto: Iste repellat officiis ex cum voluptate.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: logistics
+    testimonial: Tempora consequuntur voluptatum ut natus beatae. Ut est dolores iure
+      ut. Animi sed doloremque enim expedita tenetur quasi esse. Vero earum autem
+      illo tenetur consectetur porro aperiam. Voluptas eum sint expedita.
+    contact_name: Aut eum molestiae veritatis odio veniam omnis.
+    contact_position: Quod commodi exercitationem ut similique quas.
+- Client 3:
+    _slug: client-3
+    name: Client 3
+    moto: Totam voluptas magnam illum.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: industry
+    testimonial: Odio ab reiciendis laboriosam saepe. Id dolor beatae. Omnis nulla
+      unde.
+    contact_name: Mollitia fuga aliquid est ipsum quasi dolore ut.
+    contact_position: Amet animi sed voluptas repellat autem quae et ex.
+- Client 4:
+    _slug: client-4
+    name: Client 4
+    moto: Provident expedita soluta in velit.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: industry
+    testimonial: Rerum et cum porro vel maxime nostrum. Vero at deserunt eligendi
+      et animi. Cupiditate et assumenda quia voluptatibus occaecati. Fugit aut excepturi
+      hic sed iure. Nobis quam id et doloribus architecto est.
+    contact_name: Optio nihil omnis odio cumque.
+    contact_position: Dolor voluptas non ut nihil est.
+- Client 5:
+    _slug: client-5
+    name: Client 5
+    moto: Rem omnis a perferendis.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: logistics
+    testimonial: Unde velit sit quisquam nobis labore occaecati. Officia neque rem
+      amet adipisci voluptatem expedita. Et quo totam dolor voluptas. Repellat aut
+      voluptatem molestiae sit. Dolor maiores molestiae repudiandae quaerat tenetur
+      dolorum accusamus.
+    contact_name: Quia voluptas maiores veniam et recusandae sunt impedit.
+    contact_position: Aut molestias ducimus veritatis voluptatem.
+- Client 6:
+    _slug: client-6
+    name: Client 6
+    moto: Iste repellat officiis ex cum voluptate.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: logistics
+    testimonial: Tempora consequuntur voluptatum ut natus beatae. Ut est dolores iure
+      ut. Animi sed doloremque enim expedita tenetur quasi esse. Vero earum autem
+      illo tenetur consectetur porro aperiam. Voluptas eum sint expedita.
+    contact_name: Aut eum molestiae veritatis odio veniam omnis.
+    contact_position: Quod commodi exercitationem ut similique quas.
+- Client 7:
+    _slug: client-7
+    name: Client 7
+    moto: Totam voluptas magnam illum.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: industry
+    testimonial: Odio ab reiciendis laboriosam saepe. Id dolor beatae. Omnis nulla
+      unde.
+    contact_name: Mollitia fuga aliquid est ipsum quasi dolore ut.
+    contact_position: Amet animi sed voluptas repellat autem quae et ex.
+- Client 8:
+    _slug: client-8
+    name: Client 8
+    moto: Provident expedita soluta in velit.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: industry
+    testimonial: Rerum et cum porro vel maxime nostrum. Vero at deserunt eligendi
+      et animi. Cupiditate et assumenda quia voluptatibus occaecati. Fugit aut excepturi
+      hic sed iure. Nobis quam id et doloribus architecto est.
+    contact_name: Optio nihil omnis odio cumque.
+    contact_position: Dolor voluptas non ut nihil est.
+- Client 9:
+    _slug: client-9
+    name: Client 9
+    moto: Totam voluptas magnam illum.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: industry
+    testimonial: Odio ab reiciendis laboriosam saepe. Id dolor beatae. Omnis nulla
+      unde.
+    contact_name: Mollitia fuga aliquid est ipsum quasi dolore ut.
+    contact_position: Amet animi sed voluptas repellat autem quae et ex.
+- Client 10:
+    _slug: client-10
+    name: Client 10
+    moto: Provident expedita soluta in velit.
+    logo: "/samples/content_entries/logo.jpg"
+    city: city
+    country: country
+    sector: industry
+    testimonial: Rerum et cum porro vel maxime nostrum. Vero at deserunt eligendi
+      et animi. Cupiditate et assumenda quia voluptatibus occaecati. Fugit aut excepturi
+      hic sed iure. Nobis quam id et doloribus architecto est.
+    contact_name: Optio nihil omnis odio cumque.
+    contact_position: Dolor voluptas non ut nihil est.

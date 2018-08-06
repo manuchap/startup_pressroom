@@ -1,0 +1,27 @@
+---
+title: About
+slug: about
+position: 99
+listed: false
+published: false
+is_layout: true
+---
+{% extends 'layouts/default' %}
+{% block 'nav' %}
+{% include 'nav_about' %}
+<div class='w3-container'>
+  <div class='w3-row'>
+    <h3>
+      <a href='/about/aboutus'>{{ 'about' | translate }}</a>
+      &nbsp;>>&nbsp;
+      {% if page.depth > 2 %}
+      <a href='/about/{{ page.parent.slug }}'>{{ page.parent.title }}</a>
+      &nbsp;>>&nbsp;
+      {% endif %}
+      {{ page.title }}
+    </h3>
+  </div>
+</div>
+{% endblock %}
+{% block 'content' %}
+{% endblock %}

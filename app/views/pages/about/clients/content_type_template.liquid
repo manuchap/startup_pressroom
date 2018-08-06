@@ -1,0 +1,46 @@
+---
+title: Clients template page
+slug: content_type_template
+position: 99
+listed: false
+published: true
+is_layout: false
+content_type: clients
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row w3-margin-right'>
+    <div class='w3-col m2'>
+      <div class='w3-bar-block w3-hide-medium w3-hide-small'>
+        {% for client in contents.clients %}
+        <a class='w3-bar-item w3-button' href='{% path_to client %}'>{{ client.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class='w3-rest'>
+      <div class='avatar'>
+        <img alt='{{ client.name }}' src="{{ client.logo.url | default: '{{ 'avatar.jpg' | theme_image_url | remove_first: '/' }}' }}">
+      </div>
+      <h2>
+        {{ client.name }}
+      </h2>
+      <p>
+        {{ client.sector }},
+        <b>
+          {{ client.country }}
+        </b>
+        <br>
+        {{ client.moto }}
+      </p>
+      <p>
+        {{ client.bio }}
+      </p>
+      <br>
+      <p>
+        {{ client.testimonial }}
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

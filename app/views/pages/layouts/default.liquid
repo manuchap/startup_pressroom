@@ -1,0 +1,38 @@
+---
+title: Default
+slug: default
+position: 99
+listed: false
+published: false
+is_layout: true
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ site.name }}</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <link href="{{ 'favicon.png' | theme_image_url }}" rel='shortcut icon'>
+    {{ 'w3c.css' | stylesheet_tag }}
+    {{ 'theme.css' | stylesheet_tag }}
+    {{ 'application.css' | stylesheet_tag }}
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css' rel='stylesheet'>
+  </head>
+  <body class='w3-theme w3-margin-bottom'>
+    {% include 'nav' %}
+    {% block 'nav' %}
+    {% endblock %}
+    {% block 'content' %}
+    {% endblock %}
+    {% include 'footer' %}
+    {% include 'chat' %}
+    {{ 'application.js' | javascript_tag }}
+    {% if page.parent.slug == 'articles' %}
+    {{ 'jquery-1.11.3.min' | javascript_tag }}
+    {{ 'jspdf.min' | javascript_tag }}
+    {{ 'filesaver.min' | javascript_tag }}
+    {{ 'wordexport' | javascript_tag }}
+    {% include 'pdf' %}
+    {% endif %}
+  </body>
+</html>

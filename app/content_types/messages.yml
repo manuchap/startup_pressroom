@@ -1,0 +1,27 @@
+name: Messages
+slug: messages
+description: Messages from the site
+label_field_name: email
+order_by: _position
+order_direction: asc
+public_submission_enabled: true
+public_submission_account_emails: []
+fields:
+- email:
+    label: Email
+    type: string
+    required: true
+    hint: Customer email
+    localized: false
+- subject:
+    label: Subject
+    type: string
+    required: true
+    hint: Message subject
+    localized: false
+- message:
+    label: Message
+    type: text
+    required: false
+    hint: Message content
+    localized: false

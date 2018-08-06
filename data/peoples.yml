@@ -1,0 +1,140 @@
+- Doe1:
+    _slug: doe1
+    last_name: Doe1
+    first_name: John
+    position: founder
+    bio: Eius doloremque sint. Cum reiciendis sapiente. Vel minima sit et doloribus.
+      Possimus dolorem quod saepe cupiditate deserunt adipisci dolor.
+    experience: Maxime iure aut dolores qui porro et. Eum voluptas sequi quasi. Qui
+      quod et soluta. Rerum velit aut similique explicabo autem. Vel consequatur sint
+      sunt molestiae dolores est illum.
+    education: Voluptas corrupti quo animi. Molestiae facilis cupiditate et inventore
+      dolores. Ut non molestiae maiores est exercitationem explicabo.
+    mail: doe1@azer.com
+    facebook: facebookDoe1
+    twitter: twitterDoe1
+    google: googleDoe1
+    linkedin: linkedinDoe1
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe2:
+    _slug: doe2
+    last_name: Doe2
+    first_name: John
+    position: founder
+    bio: Assumenda non doloribus alias architecto praesentium reiciendis. Debitis
+      repellendus consequatur. Nostrum similique qui nisi qui. Atque amet et aspernatur
+      quo et. Quia quia reprehenderit.
+    experience: Quis expedita est tempore. Voluptas et dolorem. Eos ipsa deleniti
+      natus fugiat recusandae. Officiis sequi ullam esse.
+    education: Ipsam aut nisi sequi. Maxime repudiandae et. Esse consequatur dolorum
+      nobis. Ut laborum sed voluptates vitae soluta.
+    mail: doe2@azer.com
+    facebook: facebookDoe2
+    twitter: twitterDoe2
+    google: googleDoe2
+    linkedin: linkedinDoe2
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe3:
+    _slug: doe3
+    last_name: Doe3
+    first_name: John
+    position: founder
+    bio: Et omnis qui. Minus itaque tempore. Expedita cumque odit exercitationem libero
+      et. Vel et saepe et nihil. Quibusdam eum non optio reprehenderit sit.
+    experience: Voluptate nihil et. Omnis ut architecto. In assumenda asperiores.
+    education: Velit non est deserunt. Id voluptas non deserunt eos minus sit. Incidunt
+      dolorum reprehenderit praesentium ut voluptate consequatur.
+    mail: doe3@azer.com
+    facebook: facebookDoe3
+    twitter: twitterDoe3
+    google: googleDoe3
+    linkedin: linkedinDoe3
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe4:
+    _slug: doe4
+    last_name: Doe4
+    first_name: John
+    position: founder
+    bio: Earum aut beatae est. Perferendis veniam vel. Molestiae soluta quibusdam
+      deserunt suscipit. Sit quia dolorum et harum nesciunt.
+    experience: Laudantium quia ullam. Est doloribus minus quia ab. Id rerum quo qui
+      facilis quasi. Itaque sed sapiente voluptas beatae alias omnis. Officia modi
+      facere explicabo at est.
+    education: Minus sed a in. Reiciendis qui molestiae vero. Et dolorum quia magnam
+      cupiditate quo ea. Corporis sit qui suscipit necessitatibus.
+    mail: doe4@azer.com
+    facebook: facebookDoe4
+    twitter: twitterDoe4
+    google: googleDoe4
+    linkedin: linkedinDoe4
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe5:
+    _slug: doe5
+    last_name: Doe5
+    first_name: John
+    position: co-founder
+    bio: Eius doloremque sint. Cum reiciendis sapiente. Vel minima sit et doloribus.
+      Possimus dolorem quod saepe cupiditate deserunt adipisci dolor.
+    experience: Maxime iure aut dolores qui porro et. Eum voluptas sequi quasi. Qui
+      quod et soluta. Rerum velit aut similique explicabo autem. Vel consequatur sint
+      sunt molestiae dolores est illum.
+    education: Voluptas corrupti quo animi. Molestiae facilis cupiditate et inventore
+      dolores. Ut non molestiae maiores est exercitationem explicabo.
+    mail: doe5@azer.com
+    facebook: facebookDoe5
+    twitter: twitterDoe5
+    google: googleDoe5
+    linkedin: linkedinDoe5
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe6:
+    _slug: doe6
+    last_name: Doe6
+    first_name: John
+    position: co-founder
+    bio: Assumenda non doloribus alias architecto praesentium reiciendis. Debitis
+      repellendus consequatur. Nostrum similique qui nisi qui. Atque amet et aspernatur
+      quo et. Quia quia reprehenderit.
+    experience: Quis expedita est tempore. Voluptas et dolorem. Eos ipsa deleniti
+      natus fugiat recusandae. Officiis sequi ullam esse.
+    education: Ipsam aut nisi sequi. Maxime repudiandae et. Esse consequatur dolorum
+      nobis. Ut laborum sed voluptates vitae soluta.
+    mail: doe6@azer.com
+    facebook: facebookDoe6
+    twitter: twitterDoe6
+    google: googleDoe6
+    linkedin: linkedinDoe6
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe7:
+    _slug: doe7
+    last_name: Doe7
+    first_name: John
+    position: co-founder
+    bio: Et omnis qui. Minus itaque tempore. Expedita cumque odit exercitationem libero
+      et. Vel et saepe et nihil. Quibusdam eum non optio reprehenderit sit.
+    experience: Voluptate nihil et. Omnis ut architecto. In assumenda asperiores.
+    education: Velit non est deserunt. Id voluptas non deserunt eos minus sit. Incidunt
+      dolorum reprehenderit praesentium ut voluptate consequatur.
+    mail: doe7@azer.com
+    facebook: facebookDoe7
+    twitter: twitterDoe7
+    google: googleDoe7
+    linkedin: linkedinDoe7
+    photo: "/samples/content_entries/avatar.jpg"
+- Doe8:
+    _slug: doe8
+    last_name: Doe8
+    first_name: John
+    position: co-founder
+    bio: Earum aut beatae est. Perferendis veniam vel. Molestiae soluta quibusdam
+      deserunt suscipit. Sit quia dolorum et harum nesciunt.
+    experience: Laudantium quia ullam. Est doloribus minus quia ab. Id rerum quo qui
+      facilis quasi. Itaque sed sapiente voluptas beatae alias omnis. Officia modi
+      facere explicabo at est.
+    education: Minus sed a in. Reiciendis qui molestiae vero. Et dolorum quia magnam
+      cupiditate quo ea. Corporis sit qui suscipit necessitatibus.
+    mail: doe8@azer.com
+    facebook: facebookDoe8
+    twitter: twitterDoe8
+    google: googleDoe8
+    linkedin: linkedinDoe8
+    photo: "/samples/content_entries/avatar.jpg"

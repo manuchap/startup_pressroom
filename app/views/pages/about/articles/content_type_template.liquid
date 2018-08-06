@@ -1,0 +1,69 @@
+---
+title: Articles template page
+slug: content_type_template
+position: 99
+listed: false
+published: true
+is_layout: false
+content_type: articles
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row w3-margin-right'>
+    <div class='w3-col m2'>
+      <div class='w3-bar-block w3-hide-medium w3-hide-small'>
+        {% with_scope type: 'press' %}
+        {% for article in (1..contents.articles.size) %}
+        {% assign press_num = forloop.length %}
+        {% endfor %}
+        {% endwith_scope %}
+        <a href='/about/articles?filter=press'>
+          <p>
+            {{ 'press' | translate }} ({{ press_num }})
+          </p>
+        </a>
+        {% with_scope type: 'news' %}
+        {% for article in (1..contents.articles.size) %}
+        {% assign news_num = forloop.length %}
+        {% endfor %}
+        {% endwith_scope %}
+        <a href='/about/articles?filter=news'>
+          <p>
+            {{ 'articles' | translate }} ({{ news_num }})
+          </p>
+        </a>
+        {% for article in (1..contents.articles.size) %}
+        {% assign all_num = forloop.length %}
+        {% endfor %}
+        <a href='/about/articles?filter=all'>
+          <p>
+            {{ 'all' | translate }} ({{ all_num }})
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class='w3-rest' id='contentcmd'>
+      <p>
+        {{ article.content }}
+      </p>
+      <p>
+        <b>
+          {{ 'contact' | translate }}
+        </b>
+      </p>
+      <p>
+        {{ article.contact_name }}
+      </p>
+      <p>
+        {{ article.contact_email }}
+      </p>
+      <div id='ignorePDF'>
+        <a href='#' id='pdf'>PDF</a>
+        <br>
+        <a href='#' id='msw'>Word</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

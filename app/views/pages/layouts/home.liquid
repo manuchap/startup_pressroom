@@ -1,0 +1,24 @@
+---
+title: Home
+slug: home
+position: 99
+listed: false
+published: false
+is_layout: true
+---
+{% extends 'layouts/default' %}
+{% block 'content' %}
+{% block 'header', priority: 10 %}
+<header class='w3-container w3-theme w3-padding' id='myHeader'>
+  <div class='w3-center'>
+    {% editable_text header %}
+    <div class='accent w3-small'>#&nbsp;<span>StartupPressroom</span></div>
+    <h1 class='w3-xxxlarge w3-animate-bottom'>IS YOUR STARTUP READY FOR JOURNALISTS?</h1>
+    <div class='accent w3-small'>#2&nbsp;<span>MEET-a-MEDIA at betahaus Berlin , Thursday 7th April 2016</span></div>
+    {% endeditable_text %}
+  </div>
+</header>
+{% endblock %}
+{% block 'main' %}
+{% endblock %}
+{% endblock %}

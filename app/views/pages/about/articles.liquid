@@ -1,0 +1,85 @@
+---
+title: Articles
+slug: articles
+handle: articles
+position: 2
+listed: false
+published: true
+is_layout: false
+---
+{% assign filter = params.filter %}
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row w3-margin-right'>
+    <div class='w3-col m2'>
+      <div class='w3-bar-block w3-hide-medium w3-hide-small'>
+        {% with_scope type: 'press' %}
+        {% for article in (1..contents.articles.size) %}
+        {% assign press_num = forloop.length %}
+        {% endfor %}
+        {% endwith_scope %}
+        <a href='{% path_to articles %}?filter=press'>
+          <p>{{ 'press' | translate }} ({{ press_num }})</p>
+        </a>
+        {% with_scope type: 'news' %}
+        {% for article in (1..contents.articles.size) %}
+        {% assign news_num = forloop.length %}
+        {% endfor %}
+        {% endwith_scope %}
+        <a href='{% path_to articles %}?filter=news'>
+          <p>{{ 'articles' | translate }} ({{ news_num }})</p>
+        </a>
+        {% for article in (1..contents.articles.size) %}
+        {% assign all_num = forloop.length %}
+        {% endfor %}
+        <a href='{% path_to articles %}?filter=all'>
+          <p>{{ 'all' | translate }} ({{ all_num }})</p>
+        </a>
+      </div>
+    </div>
+    <div class='w3-rest'>
+      {% case filter %}
+      {% when 'press' %}
+      {% with_scope type: 'press' %}
+      {% for article in contents.articles %}
+      <p>
+        <a href='{% path_to article %}'>{{ article.content | truncatewords: 20 }}</a>
+        <br>
+        {{ article.published | localized_date: '%B %d %Y', 'en' }} - {{ article.type }}
+      </p>
+      {% endfor %}
+      {% endwith_scope %}
+      {% when 'news' %}
+      {% with_scope type: 'news' %}
+      {% for article in contents.articles %}
+      <p>
+        <a href='{% path_to article %}'>{{ article.content | truncatewords: 20 }}</a>
+        <br>
+        {{ article.published | localized_date: '%B %d %Y', 'en' }} - {{ article.type }}
+      </p>
+      {% endfor %}
+      {% endwith_scope %}
+      {% when 'all' %}
+      {% editable_model articles, hint: 'Latest articles' %}
+      {% for article in contents.articles %}
+      <p>
+        <a href='{% path_to article %}'>{{ article.content | truncatewords: 20 }}</a>
+        <br>
+        {{ article.published | localized_date: '%B %d %Y', 'en' }} - {{ article.type }}
+      </p>
+      {% endfor %}
+      {% endeditable_model %}
+      {% else %}
+      {% for article in contents.articles %}
+      <p>
+        <a href='{% path_to article %}'>{{ article.content | truncatewords: 20 }}</a>
+        <br>
+        {{ article.published | localized_date: '%B %d %Y', 'en' }} - {{ article.type }}
+      </p>
+      {% endfor %}
+      {% endcase %}
+    </div>
+  </div>
+</div>
+{% endblock %}

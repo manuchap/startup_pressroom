@@ -1,0 +1,66 @@
+---
+title: People template page
+slug: content_type_template
+position: 99
+listed: false
+published: true
+is_layout: false
+content_type: peoples
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row w3-margin-right'>
+    <div class='w3-col m2'>
+      <div class='w3-bar-block w3-hide-medium w3-hide-small'>
+        {% for people in contents.peoples %}
+        <a class='w3-bar-item w3-button' href='{% path_to people %}'>{{ people.first_name }} {{ people.last_name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class='w3-rest'>
+      <div class='avatar'>
+        <img alt='{{ people.first_name }} {{ people.last_name }}' src="{{ people.photo.url | default: '{{ 'avatar.jpg' | theme_image_url | remove_first: '/' }}' }}">
+      </div>
+      <h2>
+        {{ people.first_name }} {{ people.last_name }}
+      </h2>
+      <i>
+        {{ people.position }}
+      </i>
+      <p>
+        {{ people.bio }}
+      </p>
+      <p>
+        <b>
+          {{ 'experience' | translate | upcase }}
+        </b>
+      </p>
+      <p>
+        {{ people.experience }}
+      </p>
+      <p>
+        <b>
+          {{ 'education' | translate | upcase }}
+        </b>
+      </p>
+      <p>
+        {{ people.education }}
+      </p>
+      <p>
+        <b>
+          {{ 'contact' | translate | upcase }}
+        </b>
+      </p>
+      <p>
+        <a href='mailto:{{ people.mail }}?Subject=Startup%20Pressroom'>
+          {{ people.mail }}
+        </a>
+      </p>
+      <p>
+        {% include 'social' with people %}
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

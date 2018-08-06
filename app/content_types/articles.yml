@@ -1,0 +1,56 @@
+name: Articles
+slug: articles
+description: Press or digital news
+label_field_name: title
+order_by: created_at
+order_direction: desc
+group_by: type
+public_submission_enabled: false
+public_submission_account_emails: []
+fields:
+- title:
+    label: Title
+    type: string
+    required: true
+    hint: Article's title
+    localized: false
+- content:
+    label: Content
+    type: text
+    required: false
+    hint: Content of the article
+    localized: false
+- media:
+    label: Media
+    type: string
+    required: false
+    hint: Name of the media (eg. huffingtonpost)
+    localized: false
+- type:
+    label: Type
+    type: select
+    required: false
+    hint: Select media type
+    localized: false
+    select_options:
+      en:
+      - news
+      - press
+- published:
+    label: Published
+    type: date
+    required: false
+    hint: Date of publication
+    localized: false
+- contact_name:
+    label: Contact Name
+    type: string
+    required: false
+    hint: Name Surname
+    localized: false
+- contact_email:
+    label: Contact Email
+    type: string
+    required: false
+    hint: Email
+    localized: false

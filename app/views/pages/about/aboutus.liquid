@@ -1,0 +1,43 @@
+---
+title: About us
+slug: aboutus
+position: 0
+listed: false
+published: true
+is_layout: false
+editable_elements:
+  content/intro: "<p><img title=\"team.jpg\" alt=\"undefined\" src=\"/samples/assets/team.jpg\"><br></p><p>Lorem
+    ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor dolor vel lobortis
+    bibendum. Suspendisse vehicula sapien lorem, nec ultrices nibh tempor sit amet.</p>\r\n
+    \     <p>Sed eu molestie dolor. Suspendisse in sem lobortis, congue odio lobortis,
+    fringilla elit. Nulla sit amet nunc sed velit suscipit rutrum.</p>\r\n      <p>Lorem
+    ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempor dolor vel lobortis
+    bibendum. Suspendisse vehicula sapien lorem, nec ultrices nibh tempor sit amet.</p>"
+  content/facts: "<h5>KEY COMPANY FACTS</h5>\r\n      <h6 class=\"accent\">January
+    13 2015</h6>\r\n      <p>Eeuismod enim. Aenean sollicitudin est leo, et interdum
+    purus condimentum eget.</p>\r\n      <h6 class=\"accent\">January 1 2015</h6>\r\n
+    \     <p>Sed quis interdum massa. Vivamus vitae dapibus lacus. Nullam tristique,
+    tellus eget</p>\r\n      <h6 class=\"accent\">December 28 2015</h6>\r\n      <p>Vehicula
+    malesuada, arcu risus egestas nisi, non ullamcorper purus enim quis eros.</p>\r\n
+    \     <h6 class=\"accent\">November 6 2015</h6>\r\n      <p>Phasellus laoreet
+    augue lorem. Proin lectus metus, varius sit amet finibus sit amet,</p>\r\n      <h6
+    class=\"accent\">October 25 2015</h6>\r\n      <p>Ultrices a nunc. Proin molestie
+    ligula posuere tortor tincidunt, tempor feugiat nulla</p>\r\n      <h6 class=\"accent\">September
+    12 2015</h6>\r\n      <p>Mattis. Sed aliquet, nisl at congue feugiat, justo lorem
+    pulvinar nisl, eu mattis urna nunc</p>"
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row'>
+    <div class='w3-half w3-container w3-padding'>
+      {% editable_text intro %}
+      {% endeditable_text %}
+    </div>
+    <div class='w3-half w3-container w3-padding'>
+      {% editable_text facts %}
+      {% endeditable_text %}
+    </div>
+  </div>
+</div>
+{% endblock %}

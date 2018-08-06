@@ -1,0 +1,38 @@
+---
+title: Clients
+slug: clients
+position: 3
+listed: false
+published: true
+is_layout: false
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row'>
+    {% editable_model clients, hint: 'Our clients' %}
+    {% for client in contents.clients %}
+    <div class='w3-quarter'>
+      <div class='w3-card-4 w3-margin'>
+        <div class='w3-container'>
+          <a href='{% path_to client %}'>
+            <img alt='{{ client.name }}' class='w3-margin-top avatar' src="{{ client.logo.url | default: '{{ 'avatar.jpg' | theme_image_url | remove_first: '/' }}' }}">
+          </a>
+          <h4>
+            <b>
+              <a href='{% path_to client %}'>{{ client.name }}</a>
+            </b>
+          </h4>
+          <p>
+            <i>{{ client.sector }}</i>
+          </p>
+          <p>{{ client.city }}</p>
+          <p>{{ client.country | upcase }}</p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endeditable_model %}
+  </div>
+</div>
+{% endblock %}

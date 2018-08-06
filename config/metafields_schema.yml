@@ -1,0 +1,127 @@
+---
+address:
+  label:
+    default: Address
+  position: 0
+  fields:
+    company:
+      position: 0
+      hint:
+        default: Your Company
+      type: string
+    street:
+      position: 1
+      hint:
+        default: Physical address of your store
+      type: string
+    city:
+      position: 2
+      hint:
+        default: City you live in
+      type: string
+    country:
+      position: 3
+      hint:
+        default: Country you live in
+      type: string
+    gmap:
+      position: 4
+      hint:
+        default: Google map link
+      type: string
+contacts:
+  label:
+    default: contacts
+  position: 1
+  fields:
+    phone:
+      position: 0
+      hint:
+        default: Phone number
+      type: string
+    days:
+      position: 1
+      hint:
+        default: Opening days
+      type: string
+    hours:
+      position: 2
+      hint:
+        default: Opening hours
+      type: string
+emails:
+  label:
+    default: emails
+  position: 2
+  fields:
+    moto:
+      position: 0
+      hint:
+        default: Emails subtitle
+      type: string
+    support:
+      position: 1
+      hint:
+        default: Customer support
+      type: string
+    sales:
+      position: 2
+      hint:
+        default: Sales
+      type: string
+    enquiries:
+      position: 3
+      hint:
+        default: General enquiries
+      type: string
+    press:
+      position: 4
+      hint:
+        default: Press
+      type: string
+networks:
+  label:
+    default: Social Networks
+  position: 3
+  fields:
+    facebook:
+      position: 0
+      type: string
+    twitter:
+      position: 1
+      type: string
+presscontact:
+  label:
+    default: Press contacts
+  position: 4
+  fields:
+    name:
+      position: 0
+      hint:
+        default: Press Contact full name
+      type: string
+    photo:
+      position: 1
+      hint:
+        default: Choose a file (you can crop and resize it afterwards)
+      type: image
+    email:
+      position: 2
+      hint:
+        default: Press contact email
+      type: string
+    skype:
+      position: 3
+      hint:
+        default: Skype pseudo
+      type: string
+    telephone:
+      position: 4
+      hint:
+        default: In international format
+      type: string
+    moto:
+      position: 5
+      hint:
+        default: 'Eg: response delay'
+      type: string

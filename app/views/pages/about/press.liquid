@@ -1,0 +1,66 @@
+---
+title: Press
+slug: press
+position: 6
+listed: false
+published: true
+is_layout: false
+---
+{% assign preview = params.kit %}
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row w3-margin-right'>
+    <div class='w3-threequarter'>
+      <div class='w3-quarter'>
+        <h3>{{ 'presskits' | translate }}</h3>
+        {% editable_model presskits, hint: 'Psesskits for journalists' %}
+        {% for presskit in contents.presskits %}
+        <h5>
+          {{ presskit.title }}
+        </h5>
+        <div class='w3-text-gray'>
+          {{ presskit.format }}, {{ presskit.size }}
+          <a href='{{ page.slug }}?kit={{ presskit.file.url }}'>
+            <i class='fa fa-eye'></i>
+          </a>
+          <a href='{{ presskit.file.url }}' target='_blank'>
+            <i class='fa fa-download'></i>
+          </a>
+        </div>
+        <p>{{ presskit.released }}</p>
+        {% endfor %}
+        {% endeditable_model %}
+      </div>
+      {% if preview != nil %}
+      <div class='w3-threequarter'>
+        <div class='w3-margin-right'>
+          <iframe frameborder='0' height='500px' src='https://docs.google.com/viewer?url=http://startuppressroom.studiowan.fr{{ preview }}&amp;embedded=true' width='100%'></iframe>
+        </div>
+      </div>
+      {% endif %}
+    </div>
+    <div class='w3-quarter'>
+      <h2>{{ 'presscontact' | translate }}</h2>
+      <div class='avatar'>
+        <img alt='{{ site.metafields.presscontact.name }}' src='{{ site.metafields.presscontact.photo }}'>
+      </div>
+      <p>
+        {{ site.metafields.presscontact.name }}
+      </p>
+      <p>
+        {{ site.metafields.presscontact.email }}
+      </p>
+      <p>
+        <i class='fa fa-skype'>&nbsp; {{ site.metafields.presscontact.skype }}</i>
+      </p>
+      <p>
+        <i class='fa fa-phone'>&nbsp; {{ site.metafields.presscontact.telephone }}</i>
+      </p>
+      <p>
+        {{ site.metafields.presscontact.moto }}
+      </p>
+    </div>
+  </div>
+</div>
+{% endblock %}

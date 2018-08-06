@@ -1,0 +1,56 @@
+---
+title: Contact
+slug: contact
+position: 5
+listed: false
+published: true
+is_layout: false
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row-padding'>
+    <div class='w3-half'>
+      <div class='w3-margin-bottom'>
+        <h3>{{ 'address' | translate }}</h3>
+        {{ site.metafields.address.company }}
+        <br>
+        {{ site.metafields.address.street }}
+        <br>
+        {{ site.metafields.address.city }}
+        <br>
+        {{ site.metafields.address.country }}
+        <h3>{{ 'phone' | translate }}</h3>
+        <b>{{ site.metafields.contacts.phone }}</b>
+        <p>{{ site.metafields.contacts.days }}</p>
+        <p>{{ site.metafields.contacts.hours }}</p>
+        <h3>{{ 'emails' | translate }}</h3>
+        <h6>{{ site.metafields.emails.moto }}</h6>
+        {{ 'support' | translate }}:
+        <a href='mailto:{{ site.metafields.emails.support }}'>{{ site.metafields.emails.support }}</a>
+        <br>
+        {{ 'sales' | translate }}:
+        <a href='mailto:{{ site.metafields.emails.sales }}'>{{ site.metafields.emails.sales }}</a>
+        <br>
+        {{ 'enquiries' | translate }}:
+        <a href='mailto:{{ site.metafields.emails.enquiries }}'>{{ site.metafields.emails.enquiries }}</a>
+        <br>
+        {{ 'press' | translate }}:
+        <a href='mailto:{{ site.metafields.emails.press }}'>{{ site.metafields.emails.press }}</a>
+        <br>
+      </div>
+      <div class='w3-margin-bottom'>
+        <h3>{{ 'networks' | translate }}</h3>
+        <a href='{{ site.metafields.networks.facebook }}'>facebook</a>
+        <br>
+        <a href='{{ site.metafields.networks.twitter }}'>twitter</a>
+      </div>
+    </div>
+    <div class='w3-half'>
+      <div class='w3-margin-bottom'>
+        <iframe allowfullscreen='' frameborder='0' src='{{ site.metafields.address.gmap }}' style='border:0'></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

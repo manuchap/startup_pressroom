@@ -1,0 +1,60 @@
+- Title 1:
+    _slug: title-1
+    title: Title 1
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Vestibulum
+      et magna erat, vel fringilla quam. Curabitur ut augue arcu, et sodales enim.
+      In vitae mauris non lectus laoreet facilisis quis at ligula. Sed non metus quis
+      purus ultrices dapibus. Tenetur molestiae occaecati quibusdam facere. At vel
+      corrupti qui voluptas minima quia. Voluptatem aut dignissimos velit et voluptas.
+      Aut iusto enim repellendus ut corrupti. Qui optio quis alias saepe consequatur
+      iusto quia.
+    media: Nihil aut voluptas alias rem consequatur.
+    type: news
+    published: '2017-09-06'
+    contact_name: Dude
+    contact_email: azer@azer.com
+- Title 2:
+    _slug: title-2
+    title: Title 2
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Vestibulum
+      et magna erat, vel fringilla quam. Curabitur ut augue arcu, et sodales enim.
+      In vitae mauris non lectus laoreet facilisis quis at ligula. Sed non metus quis
+      purus ultrices dapibus. Sed porro distinctio repellat ea cupiditate. Iusto ut
+      distinctio et aspernatur dolorem. Recusandae consequuntur iusto adipisci qui
+      necessitatibus.
+    media: Culpa id ut dolores ullam harum nemo.
+    type: press
+    published: '2017-09-06'
+    contact_name: Dude
+    contact_email: azer@azer.com
+- Title 3:
+    _slug: title-3
+    title: Title 3
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Vestibulum
+      et magna erat, vel fringilla quam. Curabitur ut augue arcu, et sodales enim.
+      In vitae mauris non lectus laoreet facilisis quis at ligula. Sed non metus quis
+      purus ultrices dapibus. Doloremque occaecati hic nulla et porro tempore. Qui
+      sed et perferendis doloribus ex dolorem aliquid. Accusamus repellat dolores
+      ipsam quae illum aliquid iusto.
+    media: Animi reiciendis veritatis est est velit voluptas architecto nulla.
+    type: news
+    published: '2017-09-06'
+    contact_name: Dude
+    contact_email: azer@azer.com
+- Title 4:
+    _slug: title-4
+    title: Title 4
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed enim
+      augue, a molestie nisl. Fusce pulvinar cursus nunc eget pharetra. Vestibulum
+      et magna erat, vel fringilla quam. Curabitur ut augue arcu, et sodales enim.
+      In vitae mauris non lectus laoreet facilisis quis at ligula. Sed non metus quis
+      purus ultrices dapibus. Et fuga ea accusamus. Quas eos quod possimus. Libero
+      distinctio facilis temporibus.
+    media: Libero illum asperiores ipsam molestiae et suscipit deleniti.
+    type: press
+    published: '2017-09-06'
+    contact_name: Dude
+    contact_email: azer@azer.com

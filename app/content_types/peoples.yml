@@ -1,0 +1,86 @@
+name: Peoples
+slug: peoples
+description: Our team
+label_field_name: last_name
+order_by: _position
+order_direction: asc
+group_by: position
+public_submission_enabled: false
+public_submission_account_emails: []
+fields:
+- last_name:
+    label: Last name
+    type: string
+    required: true
+    hint: Surname
+    localized: false
+- first_name:
+    label: First name
+    type: string
+    required: false
+    hint: Name
+    localized: false
+- position:
+    label: Position
+    type: select
+    required: false
+    hint: Position in the company
+    localized: false
+    select_options:
+      en:
+      - founder
+      - co-founder
+- bio:
+    label: Bio
+    type: text
+    required: false
+    hint: Quick introduction
+    localized: false
+- experience:
+    label: Exp
+    type: text
+    required: false
+    hint: Experience in the workplace
+    localized: false
+- education:
+    label: Edu
+    type: text
+    required: false
+    hint: Studies
+    localized: false
+- mail:
+    label: Mail
+    type: string
+    required: false
+    hint: Professional email
+    localized: false
+- facebook:
+    label: Facebook
+    type: string
+    required: false
+    hint: Facebook name
+    localized: false
+- twitter:
+    label: Twitter
+    type: string
+    required: false
+    hint: Twitter name
+    localized: false
+- google:
+    label: Google
+    type: string
+    required: false
+    hint: Google name
+    localized: false
+- linkedin:
+    label: Linkedin
+    type: string
+    required: false
+    hint: Linkedin name
+    localized: false
+- photo:
+    label: Pic
+    type: file
+    required: false
+    hint: Square photo or avatar
+    localized: false

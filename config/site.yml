@@ -1,0 +1,43 @@
+name: StartupPressroom
+locales: [en, fr]
+domains: [startuppressroom.studiowan.fr]
+timezone: UTC
+seo_title:
+  en: ''
+  fr: ''
+meta_keywords:
+  en: ''
+  fr: ''
+meta_description:
+  en: ''
+  fr: ''
+robots_txt: "User-agent: *\r\nDisallow: /"
+asset_host: 
+metafields:
+  address:
+    company: Company
+    street: 700 South Laflin Street
+    city: City, AA 99999
+    country: Country
+    gmap: https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw
+  contacts:
+    phone: "+1 (0) 000 0000 001"
+    days: Monday to Friday
+    hours: '09h00 – 20h00'
+  emails:
+    moto: We usually get back to you within two business days
+    support: support@site.com
+    sales: sales@site.com
+    enquiries: enquiries@site.com
+    press: press@site.com
+  networks:
+    facebook: azer
+    twitter: azer
+  presscontact:
+    name: Franck Sinatra
+    photo: "/samples/assets/sinatra-1.jpg"
+    email: presscontact@site.com
+    skype: Sinatra
+    telephone: "+45 787 657 657"
+    moto: I usually reply in the next business day
+metafields_ui: {}

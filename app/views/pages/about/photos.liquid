@@ -1,0 +1,33 @@
+---
+title: Photos
+slug: photos
+position: 4
+listed: false
+published: true
+is_layout: false
+---
+{% extends 'layouts/about' %}
+{% block 'content' %}
+<div class='w3-container'>
+  <div class='w3-row'>
+    {% editable_model peoples, hint: 'Our Team' %}
+    {% for people in contents.peoples %}
+    <div class='w3-quarter'>
+      <div class='w3-card-4 w3-margin'>
+        <div class='w3-container'>
+          <a href='{% path_to people %}'>
+            <img alt='{{ people.first_name }} {{ people.last_name }}' class='w3-margin-top avatar' src="{{ people.photo.url | default: '{{ 'avatar.jpg' | theme_image_url | remove_first: '/' }}' }}">
+          </a>
+          <h4>
+            <b>
+              <a href='{% path_to people %}'>{{ people.first_name }} {{ people.last_name }}</a>
+            </b>
+          </h4>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endeditable_model %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+name: Presskits
+slug: presskits
+description: Presskits for journalists
+label_field_name: title
+order_by: created_at
+order_direction: asc
+public_submission_enabled: false
+public_submission_account_emails: []
+fields:
+- title:
+    label: Title
+    type: string
+    required: true
+    hint: Meanigful title for the presskit
+    localized: false
+- format:
+    label: Format
+    type: select
+    required: true
+    hint: Presskit format
+    localized: false
+    select_options:
+      en:
+      - PDF
+      - PPT
+- size:
+    label: Size
+    type: string
+    required: true
+    hint: Presskit size (look it up in Medias)
+    localized: false
+- released:
+    label: Released
+    type: date
+    required: true
+    hint: Release date of the presskit
+    localized: false
+- file:
+    label: Presskit file
+    type: file
+    required: true
+    hint: Use the corresponding format
+    localized: false

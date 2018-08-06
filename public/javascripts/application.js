@@ -1,0 +1,1 @@
+function openNav(){var a=document.getElementById("navicon");-1==a.className.indexOf("w3-show")?a.className+=" w3-show":a.className=a.className.replace(" w3-show","")}function openNavabout(){var a=document.getElementById("navabouticon");-1==a.className.indexOf("w3-show")?a.className+=" w3-show":a.className=a.className.replace(" w3-show","")}

@@ -1,0 +1,14 @@
+- Presskit 1:
+    _slug: presskit-1
+    title: Presskit 1
+    format: PDF
+    size: 1,3 Mo
+    released: '2017-09-14'
+    file: "/samples/content_entries/Support_2017_v2.pdf"
+- Presskit 2:
+    _slug: presskit-2
+    title: Presskit 2
+    format: PPT
+    size: 140 Ko
+    released: '2018-08-02'
+    file: "/samples/content_entries/Presentations-Tips.ppt"

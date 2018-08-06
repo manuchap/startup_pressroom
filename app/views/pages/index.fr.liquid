@@ -1,0 +1,48 @@
+---
+title: Page d'accueil
+slug: index
+editable_elements:
+  content/header/header: "<div class=\"accent w3-small\">#&nbsp;StartupPressroom</div>\r\n
+    \   <h1 class=\"w3-xxxlarge w3-animate-bottom\">VOTRE STARTUP EST ELLE PRÊTE POUR
+    LES JOURNALISTES?</h1>\r\n    <div class=\"accent w3-small\">#2&nbsp;MEET-a-MEDIA
+    at betahaus Berlin , Thursday 7th April 2016</div>"
+  content/main/intro: "<p>It's no secret that getting featured by the press in the
+    right media at the right time can dramatically boost your startup momentum.</p>\r\n
+    \   <p>That's why we've put together these 3 little tools to help you do it.</p>"
+  content/main/cards/card1: "<h4>PRESS-CHECKLIST</h4>\r\n        <i class=\"fa fa-check
+    accent bigicon\"></i>\r\n        <p>This checklist will help you make<br>your
+    website journalist friendly so<br>they can quickly find what they're<br>looking
+    for.</p>\r\n        <p class=\"w3-btn w3-text-white accent_bg w3-round w3-small
+    w3-margin-bottom\">Show Me The Checklist</p>"
+  content/main/cards/card2: "<h4>GO-PRESS GUIDE</h4>\r\n        <i class=\"fa fa-info
+    accent bigicon\"></i>\r\n        <p>This 7-step guide includes templates<br>and
+    checklists to help you launch a<br>straightforward press campaign.<br>Especially
+    if it's your first one.</p>\r\n        <p class=\"w3-btn w3-text-white accent_bg
+    w3-round w3-small w3-margin-bottom\">Let Me See The Guide</p>"
+  content/main/cards/card3: "<h4>MEET-a-MEDIA EVENT</h4>\r\n        <i class=\"fa
+    fa-ticket accent bigicon\"></i>\r\n        <p>Would journalists buy your story?<br>In
+    this speed dating format event,<br>you'll tell it to seven journalists in<br>a
+    row and you'll find out.</p>\r\n        <p class=\"w3-btn w3-text-white accent_bg
+    w3-round w3-small w3-margin-bottom\">Tell Me More About The Event</p>"
+  content/main/message: Need to contact us? Send your message to <span class="accent">olivia&nbsp;(at)&nbsp;startuppressroom.com</span>
+---
+{% extends 'layouts/home' %}
+{% block 'content/main' %}
+<div class='w3-container' id='home_content'>
+  <div class='w3-center w3-medium w3-text-white' id='intro'>
+    {% editable_text intro %}
+    <p>It's no secret that getting featured by the press in the right media at the right time can dramatically boost your startup momentum.</p>
+    <p>That's why we've put together these 3 little tools to help you do it.</p>
+    {% endeditable_text %}
+  </div>
+  {% block 'cards' %}
+  {% include 'cards' %}
+  {% endblock %}
+  <p class='w3-large w3-center'>
+    {% editable_text message, rows: 2 %}
+    Need to contact us? Send your message to <span class="accent">olivia&nbsp;(at)&nbsp;startuppressroom.com<span>
+    {% endeditable_text %}
+  </p>
+  {% include 'modal' %}
+</div>
+{% endblock %}

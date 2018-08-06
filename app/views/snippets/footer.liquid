@@ -1,0 +1,9 @@
+<div class='w3-container'>
+  <div class='w3-center'>
+    <p class='w3-small'>
+      &copy; {{ now | format_date: '%Y' }} {{ site.name | upcase }} {{ 'rights' | translate }}
+      <a href='https://www.iubenda.com/privacy-policy/188233' target='_blank'>{{ 'privacy' | translate }}</a>
+    </p>
+    {% locale_switcher label: 'locale', sep: ' - ' %}
+  </div>
+</div>
